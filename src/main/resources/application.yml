@@ -3,3 +3,6 @@ spring:
     url: jdbc:hsqldb:file:/Users/dtoy/Downloads/hsqldb-2.5.1/hsqldb/dtoy
     password: 123
     username: dtoy
+  jpa:
+    hibernate:
+      ddl-auto: none

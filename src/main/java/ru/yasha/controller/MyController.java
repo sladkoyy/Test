@@ -12,8 +12,14 @@ public class MyController {
     @Autowired
     AddressRepository repository;
 
+    @GetMapping("/address/raz")
+    public Address getAddressName() {
+        return repository.findByName("Raz");
+    }
+
     @GetMapping("/address")
     public List<Address> getAddress() {
         return repository.findAll();
     }
+
 }

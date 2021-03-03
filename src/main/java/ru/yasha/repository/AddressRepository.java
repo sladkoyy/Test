@@ -6,4 +6,5 @@ import ru.yasha.entity.Address;
 
 @Repository
 public interface AddressRepository extends JpaRepository<Address, Integer> {
+    Address findByName(String name);
 }
